@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_row="3"
+    android:layout_column="2"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <EditText
+        android:id="@+id/titulo"
+        android:layout_width="182dp"
+        android:layout_height="wrap_content"
+        android:layout_row="0"
+        android:layout_column="0"
+        android:ems="8"
+        android:enabled="false"
+        android:hint="@string/digite_nro_de_la_pista"
+        android:inputType="number"
+        android:autofillHints="" />
+
+    <EditText
+        android:id="@+id/nombre"
+        android:layout_width="183dp"
+        android:layout_height="wrap_content"
+        android:layout_row="1"
+        android:layout_column="0"
+        android:autofillHints=""
+        android:ems="8"
+        android:enabled="false"
+        android:hint="@string/digite_nombre"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/descripcion"
+        android:layout_width="183dp"
+        android:layout_height="wrap_content"
+        android:layout_row="2"
+        android:layout_column="0"
+        android:autofillHints=""
+        android:ems="8"
+        android:enabled="false"
+        android:hint="@string/digite_descripcion"
+        android:inputType="text" />
+
+    <Button
+        android:id="@+id/guardar"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_row="3"
+        android:layout_column="0"
+        android:ems="8"
+        android:enabled="false"
+        android:onClick="guardar"
+        android:text="@string/guardar" />
+
+
+    <Button
+        android:id="@+id/mostrar"
+        android:layout_width="166dp"
+        android:layout_height="wrap_content"
+        android:layout_row="2"
+        android:layout_column="2"
+        android:ems="8"
+        android:onClick="mostrarMarcador"
+        android:text="@string/mostrar" />
+
+      <Spinner
+        android:id="@+id/marcadores"
+        android:layout_width="169dp"
+        android:layout_height="41dp"
+        android:layout_row="1"
+        android:layout_column="2" />
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="565dp"
+        android:layout_row="4"
+        android:layout_column="0"
+        android:layout_columnSpan="3"
+        tools:context="cl.inacap.mapa.MapsActibity" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="156dp"
+        android:layout_height="wrap_content"
+        android:layout_row="0"
+        android:layout_column="2"
+        android:text="@string/marcadores"
+        android:textSize="24sp" />
+
+</GridLayout>

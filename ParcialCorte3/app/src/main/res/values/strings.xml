@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Parcial Corte 3</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="digite_descripcion">Digite descripcion</string>
+    <string name="digite_nombre">Digite nombre</string>
+    <string name="marcadores">Marcadores</string>
+    <string name="mostrar">Mostrar</string>
+    <string name="guardar">Guardar</string>
+    <string name="digite_nro_de_la_pista">Digite Nro de la pista</string>
+</resources>
